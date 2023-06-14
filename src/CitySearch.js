@@ -10,8 +10,8 @@ export default function CitySearch({getAirQuality}) {
 
     const handleSearch = (e) => {
         e.preventDefault()
-
-
+        const formattedCity = inputValue.replace(/ /g, '-')
+        getAirQuality(formattedCity)
 
     }
 
@@ -28,22 +28,7 @@ export default function CitySearch({getAirQuality}) {
             </form>
 
 
-
-
-
-
-
-
-
-
-
     )
 
 
-
-
-
-
-
-
-}
+    }
