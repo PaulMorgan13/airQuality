@@ -16,13 +16,13 @@ export default function CitySearch({getAirQuality}) {
     }
 
     return(
-            <form onSubmit={handleSearch}>
+            <form className="mb-4"  onSubmit={handleSearch}>
 
-              <input type="text" placeholder="enter city ...." onChange={handleInputChange}>
+              <input className="form-control" type="text" placeholder="enter city ...." onChange={handleInputChange}>
 
               </input> 
 
-              <button type="submit">
+              <button className="btn btn-primary mt-3" type="submit">
                 Search
               </button> 
             </form>

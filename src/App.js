@@ -4,7 +4,7 @@ import React ,{useState} from 'react';
 import './App.css';
 import CitySearch from './CitySearch';
 import "bootstrap/dist/css/bootstrap.min.css"
-
+import AirQualityCard from './AirQualityCard';
 
 function App() {   
   const [airQualityData, setAirQualityData] = useState(null)
@@ -48,8 +48,18 @@ function App() {
       <div className='alert alert-danger ' role='alert'>
       {error}
       </div>
+
     )}
-    
+      {
+        airQualityData && (
+          
+          //displat Air quality card && Pollutant info
+          
+          <AirQualityCard data={airQualityData}/>
+
+          
+        )
+      } 
     </div>
   );
 }
