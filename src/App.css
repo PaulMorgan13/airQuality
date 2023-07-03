@@ -11,6 +11,10 @@
     background-color: red;
 }  
 
-.pol{
+
+.pol {
+    transition: ease-in;
+}
+.pol:hover {
     box-shadow:3px 2px 0.5px rgba(58, 32, 85, 0.219);
 }
